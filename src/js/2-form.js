@@ -43,6 +43,7 @@ function loadFromLS(key) {
 
 function renderPage() {
   const data = loadFromLS(STORAGE_KEY);
-  formEl.elements.message.value = data.message || '';
-  formEl.elements.email.value = data.email || '';
+  form.elements.message.value = data.message || '';
+  form.elements.email.value = data.email || '';
 }
+renderPage();
